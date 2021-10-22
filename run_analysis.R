@@ -78,7 +78,8 @@ avg_data = merge(a_data,s_data, all=TRUE)
 avg_data <- select(avg_data, activity,subject,names(avg_data[,1:79]))
 avg_data <- arrange(avg_data, activity, subject)
 
-
+setwd("~/Learning R/Proyect 3/UCI HAR Dataset")
+write.table(avg_data, file ="step 5.txt", row.name=FALSE)
 
 
 
